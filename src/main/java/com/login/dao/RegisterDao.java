@@ -13,7 +13,6 @@ public class RegisterDao {
 	
 	public boolean register(String eid, String pass, String fname, String lname, String dob, String contact, String role, String salary, String bonus)
 	{
-//		return true;
 		try {
 			Class.forName("org.postgresql.Driver");
             Connection con = DriverManager.getConnection(url, username, password);

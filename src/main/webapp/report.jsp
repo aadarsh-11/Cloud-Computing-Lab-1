@@ -14,8 +14,13 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	Welcome ${eid}
-	<a href="login.jsp">Videos here</a>
+	Welcome ${name}, Following are your details <br><br>
+		Name: ${name }<br>
+		DOB: ${dob }<br>
+		Contact: ${contact }<br>
+		Role: ${role }<br>
+		Salary: ${salary }<br>
+		Bonus: ${bonus }<br><br>
 	<form action="Logout">
 		<input type="submit" value="Logout">
 	</form>
