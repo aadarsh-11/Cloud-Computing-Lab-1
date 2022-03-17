@@ -9,12 +9,12 @@
 <body>
 	<%
 		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-		if(session.getAttribute("username")==null)
+		if(session.getAttribute("eid")==null)
 		{
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	Welcome ${username}
+	Welcome ${eid}
 	<a href="login.jsp">Videos here</a>
 	<form action="Logout">
 		<input type="submit" value="Logout">

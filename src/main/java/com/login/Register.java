@@ -15,15 +15,19 @@ import jakarta.servlet.http.HttpSession;
 public class Register extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uname = request.getParameter("uname");
+		String eid = request.getParameter("eid");
 		String pass = request.getParameter("pass"); 
 		String fname = request.getParameter("fname"); 
 		String lname = request.getParameter("lname"); 
-		String email = request.getParameter("email"); 
+		String dob = request.getParameter("deb"); 
+		String contact = request.getParameter("contact"); 
+		String role = request.getParameter("role"); 
+		String salary = request.getParameter("salary"); 
+		String bonus = request.getParameter("bonus"); 
 		
 		RegisterDao dao = new RegisterDao();
 		
-		if(dao.register(uname, pass, fname, lname, email))
+		if(dao.register(eid, pass, fname, lname, dob,contact,role,salary,bonus))
 		{			
 			response.sendRedirect("login.jsp");
 		}

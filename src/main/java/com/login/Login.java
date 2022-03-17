@@ -15,17 +15,17 @@ import jakarta.servlet.http.HttpSession;
 public class Login extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uname = request.getParameter("uname");
+		String eid = request.getParameter("eid");
 		String pass = request.getParameter("pass"); 
 		
 		LoginDao dao = new LoginDao();
 		
-		if(dao.check(uname, pass))
+		if(dao.check(eid, pass))
 		{
 			HttpSession session = request.getSession();
-			session.setAttribute("username", uname);
+			session.setAttribute("eid", eid);
 			
-			response.sendRedirect("welcome.jsp");
+			response.sendRedirect("report.jsp");
 		}
 		else
 		{
