@@ -14,13 +14,22 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	Welcome ${name}, Following are your details <br><br>
-		Name: ${name }<br>
-		DOB: ${dob }<br>
-		Contact: ${contact }<br>
-		Role: ${role }<br>
-		Salary: ${salary }<br>
-		Bonus: ${bonus }<br><br>
+		
+		<h1>Get Employee Data</h1>
+		<form action="Employee">
+			Enter Employee Id: <input type = "text" name = "eid"><br>
+			<input type="submit" value="Get Data">
+		</form>
+		
+		<h1> Update Data </h1>
+		<form action="Insert" method = "post">
+			Employee Id: <input type = "text" name = "eid"><br>
+			Role: <input type = "text" name = "role"><br>
+			Monthly Salary: <input type = "text" name = "salary"><br>
+			Bonus: <input type = "text" name = "bonus"><br>
+			<input type="submit" value="Update">
+		</form>
+		
 	<form action="Logout">
 		<input type="submit" value="Logout">
 	</form>

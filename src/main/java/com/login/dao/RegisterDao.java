@@ -43,4 +43,30 @@ public class RegisterDao {
 		return false;
 	}
 	
+	public boolean update(String eid, String role, String salary, String bonus)
+	{
+		try {
+			Class.forName("org.postgresql.Driver");
+            Connection con = DriverManager.getConnection(url, username, password);
+            
+            String sql = "DELETE from Employee_Salary Where eid = '"+eid+"'";
+            
+            Statement stmt = con.createStatement();
+            int x = stmt.executeUpdate(sql);
+            
+            sql = "INSERT into Employee_Salary values('" + eid + "' ,'" + role  + "','"  + salary + "' ,'" + bonus + "' )";
+            int y = stmt.executeUpdate(sql);
+            	
+            if(y>0)
+            	return true;
+            else
+            	return false;
+            
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
 }

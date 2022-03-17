@@ -107,7 +107,7 @@ public class ReportDao {
 		{
 			e.printStackTrace();
 		}
-		return "";
+		return "0";
 	}
 	
 	public String getBonus(String eid)
@@ -127,6 +127,6 @@ public class ReportDao {
 		{
 			e.printStackTrace();
 		}
-		return "";
+		return "0";
 	}
 }

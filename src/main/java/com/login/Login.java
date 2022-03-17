@@ -26,12 +26,12 @@ public class Login extends HttpServlet {
 		{
 			HttpSession session = request.getSession();
 			session.setAttribute("eid", eid);
-			session.setAttribute("name", rdao.getName(eid));
-			session.setAttribute("dob", rdao.getDOB(eid));
-			session.setAttribute("contact", rdao.getContact(eid));
-			session.setAttribute("role", rdao.getRole(eid));
-			session.setAttribute("salary", rdao.getSalary(eid));
-			session.setAttribute("bonus", rdao.getBonus(eid));
+//			session.setAttribute("name", rdao.getName(eid));
+//			session.setAttribute("dob", rdao.getDOB(eid));
+//			session.setAttribute("contact", rdao.getContact(eid));
+//			session.setAttribute("role", rdao.getRole(eid));
+//			session.setAttribute("salary", rdao.getSalary(eid));
+//			session.setAttribute("bonus", rdao.getBonus(eid));
 			
 			response.sendRedirect("report.jsp");
 		}
