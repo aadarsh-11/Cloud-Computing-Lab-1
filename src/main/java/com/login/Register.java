@@ -19,7 +19,7 @@ public class Register extends HttpServlet {
 		String pass = request.getParameter("pass"); 
 		String fname = request.getParameter("fname"); 
 		String lname = request.getParameter("lname"); 
-		String dob = request.getParameter("deb"); 
+		String dob = request.getParameter("dob"); 
 		String contact = request.getParameter("contact"); 
 		String role = request.getParameter("role"); 
 		String salary = request.getParameter("salary"); 
