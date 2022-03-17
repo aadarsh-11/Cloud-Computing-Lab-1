@@ -27,10 +27,11 @@
 			Role: <input type = "text" name = "role"><br>
 			Monthly Salary: <input type = "text" name = "salary"><br>
 			Bonus: <input type = "text" name = "bonus"><br>
-			<input type="submit" value="Update">
+			<input type="submit" value="Update"><br>
 		</form>
 		
 	<form action="Logout">
+		<br>
 		<input type="submit" value="Logout">
 	</form>
 </body>

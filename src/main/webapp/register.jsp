@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>Register Here ...</h1><br>
 	<form action="Register" method="post">
 		Enter the following details: <br>
 		Employee ID: <input type = "text" name = "eid"><br>
